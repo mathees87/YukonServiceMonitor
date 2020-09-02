@@ -1,0 +1,37 @@
+{
+  "message": null,
+  "didError": false,
+  "errorMessage": null,
+  "model": [
+    {
+      "serviceID": 1000,      
+      "environment": "Production",
+      "serviceName": "Youkon Test Database",
+      "interval": 15000,
+      "url": null,
+      "address": null,
+      "connectionString": "server=(local);database=YoukonTestDB;integrated security=yes;",
+      "typeName": "YukonServiceMonitor.Common.Watchers.SqlServerDatabaseWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "serviceID": 2000,
+      "environment": "Production",
+      "serviceName": "Sample Production API",
+      "interval": 5000,
+      "url": "https://m72ywnji40.execute-api.eu-west-2.amazonaws.com/Prod/api/v1/category/find?name=han",
+      "address": null,
+      "connectionString": null,
+      "typeName": "YukonServiceMonitor.Common.Watchers.HttpRequestWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "serviceID": 3000,     
+      "environment": "Development",
+      "serviceName": "DNS",
+      "interval": 3000,
+      "url": null,
+      "address": "192.168.1.1",
+      "connectionString": null,
+      "typeName": "YukonServiceMonitor.Common.Watchers.PingWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ]
+}
