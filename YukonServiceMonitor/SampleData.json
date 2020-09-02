@@ -4,7 +4,7 @@
   "errorMessage": null,
   "model": [
     {
-      "serviceID": 1000,      
+      "serviceID": 1000,
       "environment": "Production",
       "serviceName": "Youkon Test Database",
       "interval": 15000,
@@ -24,7 +24,7 @@
       "typeName": "YukonServiceMonitor.Common.Watchers.HttpRequestWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     },
     {
-      "serviceID": 3000,     
+      "serviceID": 3000,
       "environment": "Development",
       "serviceName": "DNS",
       "interval": 3000,
@@ -32,6 +32,17 @@
       "address": "192.168.1.1",
       "connectionString": null,
       "typeName": "YukonServiceMonitor.Common.Watchers.PingWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "serviceID": 3000,
+      "environment": "Development",
+      "serviceName": "DNS",
+      "interval": 3000,
+      "url": null,
+      "address": "192.168.1.5",
+      "connectionString": null,
+      "typeName": "YukonServiceMonitor.Common.Watchers.PingWatcher, YukonServiceMonitor.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
     }
+
   ]
 }
